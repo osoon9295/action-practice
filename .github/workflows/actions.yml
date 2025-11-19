@@ -1,7 +1,8 @@
 name: Github Actions로 테스트 자동화하기
 on:
   push:
-    branches: -feature/*
+    branches:
+      - feature/*
 
 jobs:
   test:
