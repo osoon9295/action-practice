@@ -11,4 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 첫 번째 작업
-        run: echo "첫 번째 작업 실행 중"
+        run: |
+          echo "첫 번째 명령어"
+          echo "두 번째 명령어"
