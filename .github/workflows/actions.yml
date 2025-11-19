@@ -1,13 +1,14 @@
 name: Github Actions로 테스트 자동화하기
 on:
-  push:
-    branches: -feature/*
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Github Repository 불러오기
+      - name: Github Repository 불러오기~
         uses: actions/checkout@v5
 
       - name: Node.js 설치하기
